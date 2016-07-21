@@ -88,7 +88,7 @@ int readSys(int *, u_int, void *, size_t *);
 #define debugCheck(cb) {                                                       \
     pid_t pid = 0;                                                             \
                                                                                \
-    dbgGetPid(&pid);                                                           \
+    getpid(&pid);                                                           \
                                                                                \
     size_t sz = sizeof(struct kinfo_proc);                                     \
                                                                                \
