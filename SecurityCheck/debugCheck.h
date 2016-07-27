@@ -37,7 +37,6 @@ int readSys(int *, u_int, void *, size_t *);
 #define DBGCHK_P_TRACED 0x00000800	/* Debugged process being traced */
 
 #define debugCheck(cb) {                                                       \
-    pid_t pid = 0;                                                             \
                                                                                \
     size_t sz = sizeof(struct kinfo_proc);                                     \
                                                                                \
